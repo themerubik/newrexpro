@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add listing</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+
+<body>
+   
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-logo" title="HOME" href="https://themerubik.com">Newrexpro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="linsting.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          listing
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="linsting.html">full width listing</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://themerubik.com" data-toggle="modal" data-target="#login_model">
+                            <i class="fa fa-user"></i>log in
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://themerubik.com" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-user-plus"></i>register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--  navbar end  -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="login_model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content login_content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+               ×
+               <h6>close</h6>
+             </button>
+                </div>
+                <h5>log in</h5>
+                <form>
+                    <span class="login_name"><input class="input_style" type="text" placeholder="your name" name="name" required></span>
+                    <span><input class="input_style" type="email" placeholder="your email" name="email" type="text" required></span>
+                    <div class="flat-fogot clearfix">
+                        <label>
+                   <span class="input-check">
+                        Remember me
+                        <input id="rem" name="check" value="0" checked="" type="checkbox">
+                        <label for="rem" class="remember"></label>
+                        </span>
+                        </label>
+                        <label class="link-register">
+                    <a href="https://themerubik.com">Lost your password?</a>
+                </label>
+                    </div>
+
+                    <span class="wrap-button">
+                <input class="submit_bt" type="submit" value="log in">
+            </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal end -->
+    
+    <!-- Register Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content login_content register_content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+               ×
+               <h6>close</h6>
+             </button>
+                </div>
+                <h5> Register</h5>
+                <form>
+                    <span><input class="input_style" type="text" placeholder="your name*" name="name" required></span>
+                    
+                    <span><input class="input_style" type="text" placeholder="email*" name="name" required></span>
+                    
+                    <span><input class="input_style" placeholder="password*" name="password" type="password" required></span>
+                    
+                    <span><input class="input_style" type="password" placeholder="repeat-password*" name="repeat-password" required></span>
+                    
+
+                    <span class="wrap-button">
+                        <input class="submit_bt" type="submit" value=" Register">
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal end -->
+
+    <div id="bannar">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+
+
+
+                    <div class="col-lg-12 bannar_contant_wrap">
+                        <div class="bannar_content text-center">
+                            <h3>Easily Discover Unique City Spots</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi iste, voluptas. Magnam, ducimus, consectetur. Quos et harum nihil quis qui, cumque! Perspiciatis vel nesciunt autem exercitationem aperiam consequatur veniam fuga!</p>
+                        </div>
+                        <form class="bannar_form">
+                            <div class="row">
+                                <div class="col-lg-1 col-sm-0 col-xs-0"></div>
+                                <div class="col-lg-3 col-sm-6  input-group">
+                                    <input class="form-control" type="text" placeholder="Title">
+                                </div>
+                                <div class="col-lg-3 col-sm-6  input-group">
+                                    <input class="form-control" type="text" placeholder="Categoris">
+                                </div>
+                                <div class="col-lg-3 col-sm-6 input-group">
+                                    <input class="form-control" type="text" placeholder="location">
+                                </div>
+                                <div class="col-lg-1 col-sm-3 bn_submit">
+                                    <button>search</button>
+                                </div>
+                                <div class="col-lg-1 col-sm-3"></div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  bannar end  -->
+
+    <section id="categoris">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section_header text-center">
+                    <h4>categoris</h4>
+                    <p>What do you need to find?</p>
+                    <div class="header_border"></div>
+                    <div class="header_border_1"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="cat_info_wrap">
+
+                    <div class="col-lg-3 categoris_single_item">
+                       <div class="cat_content">
+                        <div class="cat_icon">
+                          <img src="images/hotel.png" class="img-fluid" alt="hotel">
+                        </div>
+                        <div class="cat_text">
+                            <h5><a href="https://themerubik.com">Healthy & fitness</a></h5>
+                            <h6>25 listing</h6>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 categoris_single_item">
+                       <div class="cat_content">
+                        <div class="cat_icon">
+                          <img src="images/house.png" class="img-fluid" alt="house">
+                        </div>
+                        <div class="cat_text">
+                            <h5><a href="https://themerubik.com">Real Estate</a></h5>
+                            <h6>25 listing</h6>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 categoris_single_item">
+                       <div class="cat_content">
+                        <div class="cat_icon">
+                          <img src="images/cooking.png" class="img-fluid" alt="cooking">
+                        </div>
+                        <div class="cat_text">
+                            <h5><a href="https://themerubik.com">Restaurant</a></h5>
+                            <h6>25 listing</h6>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 categoris_single_item">
+                       <div class="cat_content">
+                        <div class="cat_icon">
+                           <img src="images/care.png" class="img-fluid" alt="care">
+                        </div>
+                        <div class="cat_text">
+                            <h5><a href="https://themerubik.com">Healthy & fitness</a></h5>
+                            <h6>25 listing</h6>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 categoris_single_item">
+                       <div class="cat_content">
+                        <div class="cat_icon">
+                           <img src="images/cooking.png" class="img-fluid" alt="cooking">
+                        </div>
+                        <div class="cat_text">
+                            <h5><a href="https://themerubik.com">resturant</a></h5>
+                            <h6>25 listing</h6>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  categoris end  -->
+    
+    <section id="section_product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section_header text-center">
+                    <h4>Most Visited Places</h4>
+                    <p>Some great addresses you should not miss</p>
+                    <div class="header_border"></div>
+                    <div class="header_border_1"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_product_item">
+                        <div class="product_img">
+                            <img src="images/1.jpg" class="img-fluid" alt="img-1">
+                            <div class="time bg_red">now close</div>
+                            <a href="https://themerubik.com"><i class="fa fa-heart"></i></a>
+                            <span class="img_ovelay"></span>
+                        </div>
+                        <div class="product_info">
+                            <h6><a href="https://themerubik.com">San Angelo Restaurants</a></h6>
+                            <div class="hover_show">
+                            <p>208 W 70th Street, New York, NY</p>
+                            <div class="review">
+                                <ul class="">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li>( 2 reviewers )</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_product_item">
+                        <div class="product_img">
+                            <img src="images/1.jpg" class="img-fluid" alt="img-1">
+                            <div class="time">now open</div>
+                            <a href="https://themerubik.com"><i class="fa fa-heart"></i></a>
+                            <span class="img_ovelay"></span>
+                        </div>
+                        <div class="product_info">
+                            <h6><a href="https://themerubik.com">San Angelo Restaurants</a></h6>
+                            <div class="hover_show">
+                            <p>208 W 70th Street, New York, NY</p>
+                            <div class="review">
+                                <ul class="">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li>( 2 reviewers )</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_product_item">
+                        <div class="product_img">
+                            <img src="images/1.jpg" class="img-fluid" alt="img-1">
+                            <div class="time">now open</div>
+                            <a href="https://themerubik.com"><i class="fa fa-heart"></i></a>
+                            <span class="img_ovelay"></span>
+                        </div>
+                        <div class="product_info">
+                            <h6><a href="https://themerubik.com">San Angelo Restaurants</a></h6>
+                            <div class="hover_show">
+                            <p>208 W 70th Street, New York, NY</p>
+                            <div class="review">
+                                <ul class="">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li>( 2 reviewers )</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_product_item">
+                        <div class="product_img">
+                            <img src="images/1.jpg" class="img-fluid" alt="img-1">
+                            <div class="time bg_red">now close</div>
+                            <a href="https://themerubik.com"><i class="fa fa-heart"></i></a>
+                            <span class="img_ovelay"></span>
+                        </div>
+                        <div class="product_info">
+                            <h6><a href="https://themerubik.com">San Angelo Restaurants</a></h6>
+                            <div class="hover_show">
+                            <p>208 W 70th Street, New York, NY</p>
+                            <div class="review">
+                                <ul class="">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li>( 2 reviewers )</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_product_item">
+                        <div class="product_img">
+                            <img src="images/1.jpg" class="img-fluid" alt="img-1">
+                            <div class="time">now open</div>
+                            <a href="https://themerubik.com"><i class="fa fa-heart"></i></a>
+                            <span class="img_ovelay"></span>
+                        </div>
+                        <div class="product_info">
+                            <h6><a href="https://themerubik.com">San Angelo Restaurants</a></h6>
+                            <div class="hover_show">
+                            <p>208 W 70th Street, New York, NY</p>
+                            <div class="review">
+                                <ul class="">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li>( 2 reviewers )</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_product_item">
+                        <div class="product_img">
+                            <img src="images/1.jpg" class="img-fluid" alt="img-1">
+                            <div class="time bg_red">now close</div>
+                            <a href="https://themerubik.com"><i class="fa fa-heart"></i></a>
+                            <span class="img_ovelay"></span>
+                        </div>
+                        <div class="product_info">
+                            <h6><a href="https://themerubik.com">San Angelo Restaurants</a></h6>
+                            <div class="hover_show">
+                            <p>208 W 70th Street, New York, NY</p>
+                            <div class="review">
+                                <ul class="">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li>( 2 reviewers )</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <!--  section_product end  -->
+
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section_header text-center">
+                    <h4>latest news</h4>
+                    <p>Some great addresses you should not miss</p>
+                    <div class="header_border"></div>
+                    <div class="header_border_1"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 p-0 news_info_wrap">
+
+                    <div class="col-lg-6">
+                       <div class="news_single_item">
+                        <div class="new_img">
+                            <img src="images/s1.jpg" class="img-fluid" alt="news-1">
+                        </div>
+                        <div class="news_info">
+                            <h5>Top 10 French restaurants </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, eveniet quidem ex odio porro iusto! Consequatur provident obcaecati, perferendis ex.</p>
+                            <div class="link_more">
+                                <a href="https://themerubik.com">read more</a>
+                            </div>
+                            <div class="post_by">
+                                <ul>
+                                    <li><img src="images/icon.png" class="img-fluid" alt="img"></li>
+                                    <li class="admin_name">nelson neil</li>
+                                    <li class="date">28 may 2018</li>
+                                    <li class="icon"><i class="fa fa-heart"></i>225</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                       <div class="news_single_item">
+                        <div class="new_img">
+                            <img src="images/s1.jpg" class="img-fluid" alt="news-1">
+                        </div>
+                        <div class="news_info">
+                            <h5>Top 10 French restaurants </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, eveniet quidem ex odio porro iusto! Consequatur provident obcaecati, perferendis ex.</p>
+                            <div class="link_more">
+                                <a href="https://themerubik.com">read more</a>
+                            </div>
+                            <div class="post_by">
+                                <ul>
+                                    <li><img src="images/icon.png" class="img-fluid" alt="img"></li>
+                                    <li class="admin_name">nelson neil</li>
+                                    <li class="date">28 may 2018</li>
+                                    <li class="icon"><i class="fa fa-heart"></i>225</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                       <div class="news_single_item">
+                        <div class="new_img">
+                            <img src="images/s2.jpg" class="img-fluid" alt="news-1">
+                        </div>
+                        <div class="news_info">
+                            <h5>Top 10 French restaurants </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, eveniet quidem ex odio porro iusto! Consequatur provident obcaecati, perferendis ex.</p>
+                            <div class="link_more">
+                                <a href="https://themerubik.com">read more</a>
+                            </div>
+                            <div class="post_by">
+                                <ul>
+                                    <li><img src="images/icon.png" class="img-fluid" alt="img"></li>
+                                    <li class="admin_name">nelson neil</li>
+                                    <li class="date">28 may 2018</li>
+                                    <li class="icon"><i class="fa fa-heart"></i>225</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                       <div class="news_single_item">
+                        <div class="new_img">
+                            <img src="images/s3.jpg" class="img-fluid" alt="news-1">
+                        </div>
+                        <div class="news_info">
+                            <h5>Top 10 French restaurants </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, eveniet quidem ex odio porro iusto! Consequatur provident obcaecati, perferendis ex.</p>
+                            <div class="link_more">
+                                <a href="https://themerubik.com">read more</a>
+                            </div>
+                            <div class="post_by">
+                                <ul>
+                                    <li><img src="images/icon.png" class="img-fluid" alt="img"></li>
+                                    <li class="admin_name">nelson neil</li>
+                                    <li class="date">28 may 2018</li>
+                                    <li class="icon"><i class="fa fa-heart"></i>225</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  news end  -->
+
+    <section class="subscribe">
+        <div class="container">
+           <div class="row">
+                <div class="col-lg-12 section_header text-center">
+                    <h4>subscribe our news letter</h4>
+                    <p>Some great addresses you should not miss</p>
+                    <div class="header_border"></div>
+                    <div class="header_border_1"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <form>
+                        <div class="field">
+                            <p class="wrap-input-email">
+                                <input name="subscribe-email" placeholder="Your Email Here" type="email" required>
+                            </p>
+                            <p class="wrap-btn">
+                                <input type="submit" value="submit">
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  subscribe end  -->
+    
+    <section class="partners" style="background: #f7f7f7;">
+        <div class="container">  
+            <div class="row">
+                <div class="col-lg-12 partners_slider">
+                   
+                    <div class="col-lg-3 pt_single_slider">
+                        <img src="images/market-place-1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-3 pt_single_slider">
+                        <img src="images/market-place-2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-3 pt_single_slider">
+                        <img src="images/market-place-3.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-3 pt_single_slider">
+                        <img src="images/market-place-4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-3 pt_single_slider">
+                        <img src="images/market-place-5.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-3 pt_single_slider">
+                        <img src="images/market-place-1.png" class="img-fluid" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  partners end  -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer_one">
+                        <div class="footer_title">
+                           about us 
+                        </div>
+                        <div class="footer_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem suscipit obcaecati, sunt deleniti explicabo earum similique ipsa velit, fugiat atque quis amet laboriosam, cumque ipsam doloribus distinctio sint! Omnis, obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer_two">
+                        <div class="footer_title">
+                           categoris 
+                        </div>
+                        <div class="footer_four_content">
+                            <ul class="footer_menu ft_left_menu">
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Advertise</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Terms & Ruler</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>FAQs</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Method Payment</a></li>
+                            </ul>
+                            
+                            <ul class="footer_menu">
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Advertise</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Terms & Ruler</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>FAQs</a></li>
+                                <li><a href="https://themerubik.com"><i class="fa fa-angle-double-right"></i>Method Payment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer_three">
+                        <div class="footer_title">
+                           recent blog 
+                        </div>
+                        <div class="footer_content recent_review">
+                           <div class="single_review">
+                               <img src="images/7.jpg" class="img-fluid" alt="">
+                               <div class="single_review_content">
+                                   <p>Lincoln Square Steak</p>
+                                   <ul class="ft_rv_rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li>( 2 reviews )</li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <div class="single_review">
+                               <img src="images/7.jpg" class="img-fluid" alt="">
+                               <div class="single_review_content">
+                                   <p>Lincoln Square Steak</p>
+                                   <ul class="ft_rv_rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li>( 2 reviews )</li>
+                                   </ul>
+                               </div>
+                           </div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer_two">
+                        <div class="footer_title">
+                           quick link 
+                        </div>
+                        <div class="footer_content">
+                            <ul class="footer_menu">
+                                <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+                                <li><a href="blog.html"><i class="fa fa-angle-double-right"></i>blog</a></li>
+                                <li><a href="linsting.html"><i class="fa fa-angle-double-right"></i>listing</a></li>
+                                <li><a href="service.html"><i class="fa fa-angle-double-right"></i>service</a></li>
+                                <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </footer>
+    
+    <!--  footer end  -->
+    
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 footer_social_icon text-center">
+                    <ul>
+                        <li><a href="https://themerubik.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://themerubik.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://themerubik.com"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="https://themerubik.com"><i class="fa fa-instagram"></i></a></li> 
+                    </ul>
+                </div>
+                <div class="col-lg-12 copyright_text text-center">
+                    <p>© 2016 All rights reserved. Created by <a href="https://themerubik.com">ThemeRubki</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <!--  footer-bottom end  -->
+        
+
+    <!--======== jquery start =======-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+	jQuery(function($) {
+		if ($(window).width() > 769) {
+			$('.navbar .dropdown').hover(function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).delay(150).slideDown();
+			}, function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+			});
+		}
+	});
+
+</script>
+
+</body>
+
+</html>
